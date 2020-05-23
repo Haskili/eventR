@@ -1,7 +1,7 @@
 # eventR
 
 ## Overview: 
-This script takes in any number of file names as arguments and takes in the date/time at the head of each line as a separate event. It performs basic plotting and analysis on these data points, after which it presents the results in an aesthetically pleasing format.<br>
+This script takes in any number of file names as arguments and takes in the date/time at the head of each line as a separate event. It performs basic plotting and analysis on these data points, after which it presents the results in an aesthetically pleasing format.<br><br>
 <img src="https://i.imgur.com/80YVGbD.png"
      alt="Density Graph Overall"
      width="200" 
@@ -51,7 +51,7 @@ ggplot2
 dplyr
 stringr
 ```
-### Input File Format
+#### Input File Format
 The standard format of `date()` output is what's expected at front, and anything else can come afterwards as long as it remains on an unbroken line.
 ```
 DOW MONTH DOM HH:MM:SS TZ YR ...
@@ -59,5 +59,5 @@ DOW MONTH DOM HH:MM:SS TZ YR ...
 An example line would look like `Sat May 23 05:19:39 UTC 2020 ...`
 
 ## Usage
-Basic calling of the script with file names as arguments suffices in most cases.<br>
+Basic calling of the script with file names as arguments suffices in most cases.
 `Rscript event.R inputFile1 inputFile2 inputFile3 ...`

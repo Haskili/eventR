@@ -1,0 +1,16 @@
+os: linux
+dist: xenial
+language: r
+
+# Get CRAN package dependencies
+r_packages: 
+  - ggplot2
+  - dplyr
+  - stringr
+
+# Execute small test
+# checking if script runs
+script:
+  - cp event.R ./sampleInput
+  - cd ./sampleInput
+  - Rscript event.R in1 in2 in3 in4
