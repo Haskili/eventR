@@ -14,9 +14,11 @@ This script takes in any number of file names as arguments and takes in the date
      width="200" 
      height="200"/><br>
 ### Features
- - Overall event-time density over all input files given
- - Event-time density with respect to the input file the data is from
- - Events grouped by the file they're from
+ - Graphs overall event-time density with respect to input from all files given
+ - Displays event-time density with respect to the input file the data is from
+ - Lists all events grouped by day/logfile they're from
+ - Quick and simple entry format requirements, which can be easily customized
+ - Lightweight, and built entirely in R
 
 ## Getting Started ##
 ### Prerequisites
